@@ -11,7 +11,7 @@ function Footer(props) {
      </div>
     <div className="team-developers">
      <p>
-      Над проектом работала команда 11.
+      Над проектом работала команда 11.)
      </p>
     </div>
    </div>
