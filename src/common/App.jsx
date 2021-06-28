@@ -1,7 +1,7 @@
-import Header from "./Header";
-import Card from "./Card";
-import Footer from "./Footer";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
 import styles from "./Common.module.css";
+import Card from "../Components/Content/Card";
 
 
 function App() {

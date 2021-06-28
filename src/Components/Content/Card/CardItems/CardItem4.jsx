@@ -1,19 +1,16 @@
 import React from 'react';
-import styles from "../common/Common.module.css";
-import image from "../images/card-foto-6.png";
+import styles from "../../../../common/Common.module.css";
+import image from "../../../../images/card-foto-4.jpg";
 
-function CardItem6(props) {
+function CardItem4(props) {
  return (
-   <div className={styles.cardItem6}>
+   <div className={styles.cardItem4}>
     <div className={styles.cardImage}>
      <img src={image} alt="image"/>
     </div>
     <div className="card-tittle">
      <div className={styles.tittle1}>
-      <span>Andalus</span>
-     </div>
-     <div className={styles.tittle2}>
-      <span>Халяльные рестораны</span>
+      <span>Tutti Frutti SummerLove</span>
      </div>
     </div>
     <div className="addressees-and-City">
@@ -21,11 +18,11 @@ function CardItem6(props) {
       <span>Грозный</span>
      </div>
      <div className={styles.address}>
-      <span>Чернышевского, 67</span>
+      <span>просп. Ахмат-Кадырова, 40, ТРК Гранд-Парк</span>
      </div>
     </div>
    </div>
  );
 }
 
-export default CardItem6;
+export default CardItem4;
