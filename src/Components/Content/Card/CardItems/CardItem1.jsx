@@ -20,6 +20,9 @@ function CardItem1(props) {
      <div className={styles.address}>
       <span>Димаеваб 14</span>
      </div>
+      <div>
+        Отзыв
+      </div>
     </div>
    </div>
  );
