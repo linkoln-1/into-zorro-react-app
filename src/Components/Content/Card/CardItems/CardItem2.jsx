@@ -1,24 +1,20 @@
 import React from 'react';
 import styles from "../../../../common/Common.module.css";
-import image from "../../../../images/card-foto-2.jpg";
 
 function CardItem2(props) {
  return (
    <div className={styles.cardItem2}>
     <div className={styles.cardImage}>
-     <img src={image} alt="image"/>
+     <img src={props.items[1]?.url} alt=""/>
     </div>
     <div className="card-tittle">
      <div className={styles.tittle1}>
-      <span>Subway</span>
+      <span>{props.items[1]?.title}</span>
      </div>
     </div>
-    <div className="addressees-and-City">
-     <div className={styles.city}>
-      <span>Грозный</span>
-     </div>
+    <div className="addressees">
      <div className={styles.address}>
-      <span>просп. Ахмат-Хаджи-Кадырова, 37</span>
+      <span>{props.items[1]?.address}</span>
      </div>
     </div>
    </div>

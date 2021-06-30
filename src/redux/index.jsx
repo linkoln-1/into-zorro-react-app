@@ -1,6 +1,9 @@
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import thunk from "redux-thunk";
 import {createLogger} from "redux-logger/src";
+import Card from "../Components/Content/Card/CardReducer/cardReducer";
+
+
 
 
 const logger = createLogger({
@@ -8,7 +11,12 @@ const logger = createLogger({
  collapsed: true,
 })
 
-export const store = createStore(
-  combineReducers({}),
-  applyMiddleware(thunk, logger)
-)
+const rootReducer = combineReducers({
+ cafe:Card
+})
+
+const store = createStore(rootReducer,applyMiddleware(thunk, logger))
+
+
+export default store;
+
