@@ -5,16 +5,16 @@ function CardItem1(props) {
  return (
    <div className={styles.cardItem1}>
     <div className={styles.cardImage}>
-     <img src={props.items[0]?.url} alt="photo"/>
+     <img src={props.item.url} alt="photo"/>
     </div>
     <div className="card-tittle">
      <div className={styles.tittle1}>
-      <span>{props.items[0]?.title}</span>
+      <span>{props.item.title}</span>
      </div>
     </div>
     <div className="addressees">
      <div className={styles.address}>
-      <span>{props.items[0]?.address}</span>
+      <span>{props.item.address}</span>
      </div>
     </div>
    </div>
