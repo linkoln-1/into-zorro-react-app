@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../../../../common/Common.module.css";
 
-function CardItem1(props) {
+function HomePage (props) {
  return (
    <div className={styles.cardItem1}>
     <div className={styles.cardImage}>
@@ -21,4 +21,4 @@ function CardItem1(props) {
  );
 }
 
-export default CardItem1;
+export default HomePage;
