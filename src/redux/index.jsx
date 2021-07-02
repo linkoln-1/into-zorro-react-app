@@ -6,13 +6,14 @@ import Card from "../Components/Content/Card/CardReducer/cardReducer";
 
 
 
+
 const logger = createLogger({
  diff:true,
  collapsed: true,
 })
 
 const rootReducer = combineReducers({
- cafe:Card
+ cafe:Card,
 })
 
 const store = createStore(rootReducer,applyMiddleware(thunk, logger))
