@@ -5,6 +5,8 @@ import Card from "../Components/Content/Card";
 import {useDispatch} from "react-redux";
 import {useEffect} from "react";
 import {LoadItems} from "../Components/Content/Card/CardReducer/actions";
+import BlockReview
+  from '../Components/Content/Card/Reviews/BlockReviews/BlockReview'
 
 
 
@@ -22,6 +24,7 @@ function App() {
       <Header />
       <Card />
       <Footer />
+      <BlockReview />
     </div>
   );
 }
