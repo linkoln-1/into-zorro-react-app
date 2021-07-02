@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from "../../../../../common/Common.module.css";
+import map from "../../../images/Screenshot_1 2.png";
 
 function LocationMap(props) {
  return (
