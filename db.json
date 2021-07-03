@@ -1,5 +1,5 @@
 {
-  "cafe" : [
+  "cafe": [
     {
       "id": 1,
       "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/51/b1/36/caption.jpg",
@@ -15,13 +15,11 @@
       "rating": ""
     }
   ],
-
-
   "users": [
     {
       "id": 1,
       "name": "1удди",
-      "email": "1uddi@mail.ru"
+      "password": "1234"
     },
     {
       "id": 2,
@@ -32,10 +30,13 @@
       "id": 3,
       "name": "Leanne",
       "email": "leanne@mail.ru"
+    },
+    {
+      "email": "dsds@dfd",
+      "pass": "eee",
+      "id": 4
     }
   ],
-
-
   "reviews": [
     {
       "userId": 1,
