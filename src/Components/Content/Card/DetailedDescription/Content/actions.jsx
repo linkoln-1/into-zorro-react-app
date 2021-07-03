@@ -1,7 +1,7 @@
 export const loadCafe = () => {
   return (dispatch) => {
-    dispatch({type: 'load/cafe/start'});
+    dispatch({ type: "load/cafe/start" });
 
-    fetch()
-  }
-}
+    fetch();
+  };
+};
