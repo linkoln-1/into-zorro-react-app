@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../../common/Common.module.css";
-import logo from "../../images/logo.jpg";
+import logo from "../Content/images/logo.jpg";
 import {Link} from "react-router-dom";
 
 function LogoText(props) {
