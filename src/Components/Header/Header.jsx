@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from "../../common/Common.module.css";
 import LogoText from "./LogoText";
-import {Link, Route} from "react-router-dom";
+import {Link, Route, Switch} from "react-router-dom";
+import Authorization from "../../Components/Content/Card/DetailedDescription/Header/Authorization";
+import Login from "../authorization/index";
+
 
 function Header() {
  return (
    <div className={styles.header}>
-    <Route exact to="/home">
+    <Route exact to="/">
      <LogoText />
     </Route>
 
@@ -14,7 +17,10 @@ function Header() {
 
     {/* Тут будут кнопки входа и регистрации, поэтому просто напишу текст */}
     <div className="sign-up-login">
-     <span> Войти или Зарегестрироваться</span>
+     <Switch>
+      <Route exact path="/" component={Login} />
+      <Route exact path="/:routeId?" component={Authorization} />
+     </Switch>
     </div>
 
    </div>

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 function LogoText(props) {
  return (
-   <Link to="/home">
+   <Link to="/">
    <div className={styles.logoText}>
      <div className={styles.logo}>
       <img src={logo} alt="image"/>

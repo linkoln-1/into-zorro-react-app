@@ -1,7 +1,7 @@
 import {applyMiddleware, combineReducers, createStore} from "redux";
 import thunk from "redux-thunk";
 import {createLogger} from "redux-logger/src";
-import Card from "../Components/Content/Card/CardReducer/cardReducer";
+import Card from "../Components/Content/Card/CardItems/cardReducer";
 
 
 
