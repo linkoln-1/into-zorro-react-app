@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../../../../common/Common.module.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -8,7 +8,7 @@ function HomePage (props) {
 
  return (
     <div className={styles.cardItem1}>
-     <Link to={`/${props.item.cafeId}`}>
+     <Link to={`/${props.item.routeId}`}>
      <div className={styles.cardImage}>
       <img src={props.item.url} alt="photo"/>
      </div>
