@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './regist.module.css'
-import Input from './input/Input'
-import { registration } from '../../redux/actions'
+import Input from '../Input/Input'
+import {registration} from '../../redux/actions'
 
 function Registration(props) {
   const [email, setEmail] = useState('')
@@ -11,7 +11,7 @@ function Registration(props) {
      <div>Регистрация</div>
      <Input value={email} setValue={setEmail} type='text' placeholder='name'/>
      <Input value={pass} setValue={setPass} type='password' placeholder='password'/>
-     <button onClick={() => registration(email, pass)}> Войти</button>
+     <button onClick={() => registration(email, pass)}> Загерестрироваться</button>
    </div>
  );
 }

@@ -3476,6 +3476,7 @@
       "resolved": "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz",
       "integrity": "sha1-aN/1++YMUes3cl6p4+0xDcwed24="
     },
+<<<<<<< HEAD
     "boxen": {
       "version": "4.2.0",
       "resolved": "https://registry.npmjs.org/boxen/-/boxen-4.2.0.tgz",
@@ -3506,6 +3507,8 @@
         }
       }
     },
+=======
+>>>>>>> master
     "brace-expansion": {
       "version": "1.1.11",
       "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",
@@ -6681,6 +6684,7 @@
         "is-glob": "^4.0.1"
       }
     },
+<<<<<<< HEAD
     "global-dirs": {
       "version": "2.1.0",
       "resolved": "https://registry.npmjs.org/global-dirs/-/global-dirs-2.1.0.tgz",
@@ -6698,6 +6702,8 @@
         }
       }
     },
+=======
+>>>>>>> master
     "global-modules": {
       "version": "2.0.0",
       "resolved": "https://registry.npmjs.org/global-modules/-/global-modules-2.0.0.tgz",
@@ -7591,6 +7597,7 @@
         "is-extglob": "^2.1.1"
       }
     },
+<<<<<<< HEAD
     "is-installed-globally": {
       "version": "0.3.2",
       "resolved": "https://registry.npmjs.org/is-installed-globally/-/is-installed-globally-0.3.2.tgz",
@@ -7609,6 +7616,8 @@
         }
       }
     },
+=======
+>>>>>>> master
     "is-module": {
       "version": "1.0.0",
       "resolved": "https://registry.npmjs.org/is-module/-/is-module-1.0.0.tgz",
@@ -7619,12 +7628,15 @@
       "resolved": "https://registry.npmjs.org/is-negative-zero/-/is-negative-zero-2.0.1.tgz",
       "integrity": "sha512-2z6JzQvZRa9A2Y7xC6dQQm4FSTSTNWjKIYYTt4246eMTJmIo0Q+ZyOsU66X8lxK1AbB92dFeglPLrhwpeRKO6w=="
     },
+<<<<<<< HEAD
     "is-npm": {
       "version": "4.0.0",
       "resolved": "https://registry.npmjs.org/is-npm/-/is-npm-4.0.0.tgz",
       "integrity": "sha512-96ECIfh9xtDDlPylNPXhzjsykHsMJZ18ASpaWzQyBr4YRTcVjUvzaHayDAES2oU/3KpljhHUjtSRNiDwi0F0ig==",
       "dev": true
     },
+=======
+>>>>>>> master
     "is-number": {
       "version": "7.0.0",
       "resolved": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz",
@@ -8816,6 +8828,7 @@
       "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
       "integrity": "sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg=="
     },
+<<<<<<< HEAD
     "json-server": {
       "version": "0.16.3",
       "resolved": "https://registry.npmjs.org/json-server/-/json-server-0.16.3.tgz",
@@ -8974,6 +8987,8 @@
         }
       }
     },
+=======
+>>>>>>> master
     "json-stable-stringify-without-jsonify": {
       "version": "1.0.1",
       "resolved": "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz",
@@ -14439,6 +14454,7 @@
       "resolved": "https://registry.npmjs.org/upath/-/upath-1.2.0.tgz",
       "integrity": "sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg=="
     },
+<<<<<<< HEAD
     "update-notifier": {
       "version": "4.1.3",
       "resolved": "https://registry.npmjs.org/update-notifier/-/update-notifier-4.1.3.tgz",
@@ -14460,6 +14476,8 @@
         "xdg-basedir": "^4.0.0"
       }
     },
+=======
+>>>>>>> master
     "uri-js": {
       "version": "4.4.1",
       "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",

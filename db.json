@@ -2,6 +2,7 @@
   "cafe": [
     {
       "id": 1,
+      "cafeId": "esperanto",
       "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/51/b1/36/caption.jpg",
       "title": "Эсперанто",
       "address": "Грозный, ул. Шейха Али Митаева, д. 47 ТЦ Раяна, супермаркет Мигрос",
@@ -9,9 +10,42 @@
     },
     {
       "id": 2,
+      "cafeId": "restaurant_kupol",
       "url": "https://media-cdn.tripadvisor.com/media/photo-s/16/f4/f3/2e/photo1jpg.jpg",
       "title": "Ресторан Купол",
-      "address": "Грозный, пр. Кадырова, 1/16 Гостиница Грозный",
+      "address": "Грозный, пр. Кадырова, 1/16 Гостиница \"Грозный\"",
+      "rating": ""
+    },
+    {
+      "id": 3,
+      "cafeId": "steakhous",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/1a/bf/66/01/photo8jpg.jpg",
+      "title": "Steakhous",
+      "address": "Грозный, пр-т А. А. Кадырова, ТЦ \"Гранд парк\", 1 этаж",
+      "rating": ""
+    },
+    {
+      "id": 4,
+      "cafeId": "drinks",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/12/2b/55/42/caption.jpg",
+      "title": "Drinks",
+      "address": "Грозный, ул. Кабардинская, 4",
+      "rating": ""
+    },
+    {
+      "id": 5,
+      "cafeId": "patio",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/17/17/55/a1/stuffed-fresh-cheese.jpg",
+      "title": "Patio",
+      "address": "Грозный, ул. Полярников, 49",
+      "rating": ""
+    },
+    {
+      "id": 6,
+      "cafeId": "vincenzo",
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/12/45/d5/ee/caption.jpg",
+      "title": "Vincenzo",
+      "address": "Грозный, пр. Ахмата Кадырова, 40 Grand Park Mall",
       "rating": ""
     }
   ],
@@ -35,6 +69,26 @@
       "email": "dsds@dfd",
       "pass": "eee",
       "id": 4
+    },
+    {
+      "email": "foobar",
+      "pass": "qwerty",
+      "id": 5
+    },
+    {
+      "email": "qwerty",
+      "pass": "qwerty",
+      "id": 6
+    },
+    {
+      "email": "qwe",
+      "pass": "qwe",
+      "id": 7
+    },
+    {
+      "email": "qwe",
+      "pass": "qwe",
+      "id": 8
     }
   ],
   "reviews": [
