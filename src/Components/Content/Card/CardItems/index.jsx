@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function HomePage(props) {
   return (
     <div className={styles.cardItem1}>
-      <Link to={`/${props.item.routeId}`}>
+      <Link to={`${props.item.id}`}>
         <div className={styles.cardImage}>
           <img src={props.item.url} alt="images" />
         </div>

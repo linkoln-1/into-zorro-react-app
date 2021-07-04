@@ -47,9 +47,12 @@
   font-weight: 600;
   cursor: pointer;
 }
-.tittle2,
-.city span,
-.address span {
+.address div,.clockWork div, .numberUs div {
+  font-size: 17px;
+  font-weight: lighter;
+  cursor: text;
+}
+.address span,.clockWork span, .numberUs span {
   font-size: 11px;
   font-weight: lighter;
   color: gray;
@@ -60,15 +63,26 @@
   margin-left: 30px;
 }
 .BigImage {
-  width: 1350px;
-  height: 300px;
-  margin: 20px auto;
-  border: 1px solid black;
-  text-align: center;
+  width: 1260px;
+  height: 400px;
+  margin-bottom: 40px;
 }
-.image {
-  margin-top: 150px;
+.BigImage img {
+  width: 1260px;
+  height: 400px;
 }
+.opacity {
+  opacity: 0.3;
+}
+.tittleRestaurant span {
+  position: absolute;
+  top: 350px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
 .ClockMap {
   width: 500px;
 }
@@ -89,7 +103,7 @@
   width: 1350px;
 }
 .Info {
-  width: 210px;
+  width: 290px;
   margin-top: 100px;
   margin-bottom: 100px;
 }

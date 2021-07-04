@@ -21,7 +21,7 @@ function Card(props) {
             })
           )}
         </Route>
-        <Route exact path="/:routeId?">
+        <Route exact path="/:id?">
           <Content  />
         </Route>
       </Switch>
