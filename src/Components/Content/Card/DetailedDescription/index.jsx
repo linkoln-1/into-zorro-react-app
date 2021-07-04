@@ -1,15 +1,12 @@
-import React from 'react';
-import Header from "./Header/Header";
+import React from "react";
 import Content from "./Content";
-import {Link} from "react-router-dom";
 
 function DetailedDescription(props) {
- return (
-   <div>
-    <Header />
-    <Content />
-   </div>
- );
+  return (
+    <div>
+      <Content />
+    </div>
+  );
 }
 
 export default DetailedDescription;

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function Authorization(props) {
- return (
-   <div>
-    hello
-   </div>
- );
+function Login(props) {
+  return (
+    <div>
+      <span>Войти или Зарегестрироваться </span>
+    </div>
+  );
 }
 
-export default Authorization;
+export default Login;
