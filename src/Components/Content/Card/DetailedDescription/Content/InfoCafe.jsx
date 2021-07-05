@@ -1,50 +1,42 @@
 import React from "react";
 import styles from "../../../../../common/Common.module.css";
 
-
 function InfoCafe(props) {
-
   return (
     <div className={styles.Info}>
       <section>
         <div className="contactInfo">
-          <div className="tittle">
+          <div className={styles.tittle1}>
             <span>Контактная информация</span>
           </div>
           <div className={styles.infoBlock}>
             <div className={styles.address}>
+              <div>Адрес</div>
               <div>
-                <span>адрес</span>
-              </div>
-              <div>
-                <span></span>
+                <span>{props.item.LocationAddress}</span>
               </div>
             </div>
 
             <div className={styles.clockWork}>
+              <div>Время Работы</div>
               <div>
-                <span>время работы</span>
-              </div>
-              <div>
-                <span>пн-вс 8.00–0.00</span>
+                <span>{props.item.WorkingHours}</span>
               </div>
             </div>
 
             <div className={styles.numberUs}>
+              <div>Телефон</div>
               <div>
-                <span>телефон :</span>
-              </div>
-              <div>
-                <span>+7 928 894 90 90</span>
+                <span>{props.item.phone}</span>
               </div>
             </div>
 
             <div className="official-site">
+              <div>Официальный сайт</div>
               <div>
-                <span>официальный сайт</span>
-              </div>
-              <div>
-                <span>www.travelers-coffee.com</span>
+                <span>
+                  <a href="#"> www.travelers-coffee.com</a>
+                </span>
               </div>
             </div>
           </div>

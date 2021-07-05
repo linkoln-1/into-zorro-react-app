@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../../common/Common.module.css";
 import logo from "../Content/images/logo.jpg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function LogoText(props) {
   return (
-    <Link to="/">
+    <NavLink exact to="/" className={styles.HomePage}>
       <div className={styles.logoText}>
         <div className={styles.logo}>
           <img src={logo} alt="images" />
@@ -14,7 +14,7 @@ function LogoText(props) {
           <span>Рестораны и Кафе</span>
         </div>
       </div>
-    </Link>
+    </NavLink>
   );
 }
 

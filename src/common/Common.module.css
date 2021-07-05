@@ -5,13 +5,25 @@
   width: 1350px;
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 20px auto;
   justify-content: space-between;
+}
+.Login {
+  width: 250px;
+  margin: auto;
 }
 .logoText {
   width: 200px;
   display: flex;
 }
+.HomePage {
+  color: black;
+  text-decoration: none;
+}
+.HomePage:hover {
+  color: red;
+}
+
 .text {
   margin: 20px 0 0 15px;
 }
@@ -41,15 +53,23 @@
 .cardImage img {
   width: 240px;
   height: 180px;
+  border-radius: 20px;
 }
 .tittle1 {
   font-size: 21px;
   font-weight: 600;
   cursor: pointer;
 }
-.tittle2,
-.city span,
-.address span {
+.address div,
+.clockWork div,
+.numberUs div {
+  font-size: 17px;
+  font-weight: lighter;
+  cursor: text;
+}
+.address span,
+.clockWork span,
+.numberUs span {
   font-size: 11px;
   font-weight: lighter;
   color: gray;
@@ -60,15 +80,27 @@
   margin-left: 30px;
 }
 .BigImage {
-  width: 1350px;
-  height: 300px;
-  margin: 20px auto;
-  border: 1px solid black;
-  text-align: center;
+  width: 1260px;
+  height: 400px;
+  margin-bottom: 40px;
 }
-.image {
-  margin-top: 150px;
+.BigImage img {
+  width: 1260px;
+  height: 400px;
+  border-radius: 20px;
 }
+.opacity {
+  opacity: 0.3;
+}
+.tittleRestaurant span {
+  position: absolute;
+  top: 350px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
 .ClockMap {
   width: 500px;
 }
@@ -89,7 +121,7 @@
   width: 1350px;
 }
 .Info {
-  width: 210px;
+  width: 290px;
   margin-top: 100px;
   margin-bottom: 100px;
 }

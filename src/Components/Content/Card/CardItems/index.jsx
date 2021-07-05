@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../../../../common/Common.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function HomePage(props) {
   return (
     <div className={styles.cardItem1}>
-      <Link to={`/${props.item.routeId}`}>
+      <NavLink to={`${props.item.id}`} className={styles.HomePage}>
         <div className={styles.cardImage}>
           <img src={props.item.url} alt="images" />
         </div>
@@ -14,7 +14,7 @@ function HomePage(props) {
             <span>{props.item.title}</span>
           </div>
         </div>
-      </Link>
+      </NavLink>
       <div className="addressees">
         <div className={styles.address}>
           <span>{props.item.address}</span>
