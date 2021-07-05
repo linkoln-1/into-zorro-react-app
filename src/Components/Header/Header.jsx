@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "../../common/Common.module.css";
 import LogoText from "./LogoText";
-import { Route, Switch } from "react-router-dom";
-import Authorization from "../../Components/Content/Card/DetailedDescription/Header/Authorization";
-import Login from "../authorization/index";
+import { Link, Route } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,13 +10,9 @@ function Header() {
         <LogoText />
       </Route>
 
-      {/* Тут будут кнопки входа и регистрации, поэтому я пока что
-     сделал изменения с главной на переключенной странице */}
       <div className="sign-up-login">
-        <Switch>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/:routeId?" component={Authorization} />
-        </Switch>
+        {/*Как я и сказал Линк находится тут*/}
+        <Link to="/registration">Регистрация</Link>
       </div>
     </div>
   );

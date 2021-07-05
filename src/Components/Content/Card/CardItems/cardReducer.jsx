@@ -1,7 +1,7 @@
 const initialState = {
   item: [],
-  addresses:[],
-  BigImage:[],
+  addresses: [],
+  BigImage: [],
   ContactInfo: [],
   loadingItem: false,
 };
@@ -20,7 +20,6 @@ export const Card = (state = initialState, action) => {
         item: action.payload,
         loadingItem: false,
       };
-
 
     case "addresses/load/start":
       return {
@@ -60,7 +59,6 @@ export const Card = (state = initialState, action) => {
         ContactInfo: action.payload,
         loadingItem: false,
       };
-
 
     default:
       return state;

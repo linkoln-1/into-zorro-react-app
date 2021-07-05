@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "../../../../../common/Common.module.css";
 
-
 function InfoCafe(props) {
-
   return (
     <div className={styles.Info}>
       <section>
@@ -13,38 +11,32 @@ function InfoCafe(props) {
           </div>
           <div className={styles.infoBlock}>
             <div className={styles.address}>
-              <div>
-               Адрес
-              </div>
+              <div>Адрес</div>
               <div>
                 <span>{props.item.LocationAddress}</span>
               </div>
             </div>
 
             <div className={styles.clockWork}>
-              <div>
-                Время Работы
-              </div>
+              <div>Время Работы</div>
               <div>
                 <span>{props.item.WorkingHours}</span>
               </div>
             </div>
 
             <div className={styles.numberUs}>
-              <div>
-                Телефон
-              </div>
+              <div>Телефон</div>
               <div>
                 <span>{props.item.phone}</span>
               </div>
             </div>
 
             <div className="official-site">
+              <div>Официальный сайт</div>
               <div>
-                Официальный сайт
-              </div>
-              <div>
-                <span><a href="#"> www.travelers-coffee.com</a></span>
+                <span>
+                  <a href="#"> www.travelers-coffee.com</a>
+                </span>
               </div>
             </div>
           </div>
