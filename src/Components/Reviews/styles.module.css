@@ -1,0 +1,11 @@
+.reviewsBlock {
+    margin-top: 40px;
+    display: flex;
+    padding-top: 10px;
+    border-top: solid 1px lightslategrey;
+}
+
+input {
+    width: 500px;
+    margin-right: 50px;
+}
