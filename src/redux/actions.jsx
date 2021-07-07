@@ -12,5 +12,5 @@ export const login = async (email, pass) => {
   let user_data = { email, pass }
 
   try { const request = axios.post('http://localhost:8000/user-login') }
-  catch (e) { alert(e) }
+  catch (e) { alert(e) } 
 }

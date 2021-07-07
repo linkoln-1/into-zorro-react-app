@@ -19,7 +19,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+<<<<<<< HEAD
     "watch": "npx json-server --watch db.json --port 8000"
+=======
+    "prettify": "prettier --write ./src"
+>>>>>>> master
   },
   "eslintConfig": {
     "extends": [

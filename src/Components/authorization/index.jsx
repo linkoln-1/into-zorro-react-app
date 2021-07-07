@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import styles from './regist.module.css'
 import Input from '../Input/Input'
@@ -15,5 +16,3 @@ function Registration(props) {
    </div>
  );
 }
-
-export default Registration;
