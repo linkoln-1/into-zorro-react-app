@@ -1,21 +1,21 @@
 const initialState = {
-  reviews: [],
+  users: [],
   loading: false
 }
 
-const reviewsReduser = (state = initialState, action) => {
+const usersReduser = (state = initialState, action) => {
   switch (action.type) {
-    case  'reviews/load/start':
+    case 'users/load/start':
       return {
         ...state,
         loading: true
       }
 
-    case  'reviews/load/success':
+    case 'users/load/success':
       return {
         ...state,
         loading: false,
-        reviews: action.payload
+        users: action.payload
       }
 
     default:
@@ -23,4 +23,4 @@ const reviewsReduser = (state = initialState, action) => {
   }
 }
 
-export default reviewsReduser;
+export default usersReduser;

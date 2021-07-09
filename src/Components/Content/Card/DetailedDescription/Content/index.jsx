@@ -31,7 +31,9 @@ function Content(props) {
       })}
 
       <LocationMap />
-      <Reviews/>
+      <div>
+        <Reviews/>
+      </div>
     </div>
   );
 }

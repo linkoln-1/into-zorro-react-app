@@ -1,8 +1,21 @@
-.reviewsBlock {
+.reviewsContent {
     margin-top: 40px;
     display: flex;
     padding-top: 10px;
     border-top: solid 1px lightslategrey;
+}
+
+.reviewsBlock {
+    display: flex;
+}
+
+
+.users {
+    margin-right: 30px;
+}
+
+.reviews {
+
 }
 
 input {
