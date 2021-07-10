@@ -164,7 +164,7 @@
     {
       "id": 1,
       "name": "1удди",
-      "email": "1uddi@mail.ru"
+      "password": "1234"
     },
     {
       "id": 2,
@@ -175,6 +175,36 @@
       "id": 3,
       "name": "Leanne",
       "email": "leanne@mail.ru"
+    },
+    {
+      "email": "dsds@dfd",
+      "pass": "eee",
+      "id": 4
+    },
+    {
+      "email": "foobar",
+      "pass": "qwerty",
+      "id": 5
+    },
+    {
+      "email": "qwerty",
+      "pass": "qwerty",
+      "id": 6
+    },
+    {
+      "email": "qwe",
+      "pass": "qwe",
+      "id": 7
+    },
+    {
+      "email": "qwe",
+      "pass": "qwe",
+      "id": 8
+    },
+    {
+      "email": "ali",
+      "pass": "1234",
+      "id": 9
     }
   ],
 

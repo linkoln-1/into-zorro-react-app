@@ -7,6 +7,31 @@ import Content from "./DetailedDescription/Content";
 import Login from "../../authorization";
 
 function Card(props) {
+<<<<<<< HEAD
+ const items = useSelector(state => state.cafe.item);
+ const loading = useSelector(state => state.cafe.loadingItem);
+
+ return (
+   <div className={styles.card}>
+    {loading ? 
+      (
+        <div>
+         wait please, loading start!
+        </div>
+      ) :
+      (
+        items.map((item) => {
+         return (
+           <Route exact path="/:cafeId?">
+            <HomePage item={item} key={item.id} />
+           </Route>
+           )
+        })
+      )
+    }
+   </div>
+ );
+=======
   const items = useSelector((state) => state.cafe.item);
   const loading = useSelector((state) => state.cafe.loadingItem);
 
@@ -37,6 +62,7 @@ function Card(props) {
       </Switch>
     </div>
   );
+>>>>>>> master
 }
 
 export default Card;
