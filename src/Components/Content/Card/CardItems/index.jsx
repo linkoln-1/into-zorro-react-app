@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../../../../common/Common.module.css";
-import { NavLink } from "react-router-dom";
-import StarRating from "../rating/StarRating";
+import {NavLink} from "react-router-dom";
 
 function HomePage(props) {
   return (
@@ -21,7 +20,7 @@ function HomePage(props) {
           <span>{props.item.address}</span>
         </div>
       </div>
-     <StarRating />
+     {props.Rating}
     </div>
   );
 }

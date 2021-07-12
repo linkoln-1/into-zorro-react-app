@@ -1,38 +1,24 @@
 import React, { useState} from 'react';
-import {FaStar} from"react-icons/fa";
 import styles from "../../../../common/Common.module.css";
+import Rating from "react-rating";
+import {faStar} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function StarRating(props) {
- const [rating, setRating] = useState(null);
- const [hover, setHover] = useState(null);
+const rating = <FontAwesomeIcon icon={faStar} />
+ const initialValue = props.rating;
+
+
 
  return (
    <div className={styles.RatingBlock}>
-    <div>
-     {[...Array(5)].map((star,i) => {
-      const RatingValue = i + 1;
-      return (
-        <label>
-         <input
-           className={styles.input}
-           type="radio" name="rating"
-           value={RatingValue}
-           onClick={() => setRating(RatingValue)}
-         />
-         <FaStar
-           className={styles.Star}
-           color={RatingValue <= (hover || rating)  ? "#ffc107" : "#e4e5e9"} size={20}
-           onMouseEnter={() => setHover(RatingValue)}
-           onMouseLeave={() => setHover(null)}
-         />
-        </label>
-      )
-     })}
-    </div>
-    <div className={styles.TextRating}>
-     <p>{rating} из 5</p>
-    </div>
+     <Rating
+       initialRating={props.rating}
+       emptySymbol={rating}
+       fullSymbol={rating}
+     />
+    <p>rating is {initialValue}</p>
    </div>
  );
 }

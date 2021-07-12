@@ -5,44 +5,27 @@ import styles from "../../../common/Common.module.css";
 import { Route, Switch } from "react-router-dom";
 import Content from "./DetailedDescription/Content";
 import Login from "../../authorization";
+import StarRating from "./rating/StarRating";
 
 function Card(props) {
-<<<<<<< HEAD
  const items = useSelector(state => state.cafe.item);
  const loading = useSelector(state => state.cafe.loadingItem);
+ const ratingItems = useSelector(state => state.ratinges.rating);
+ const apRating = ratingItems.map((ratines) => {
+  return ratines.rating;
+ })
+ const summRating = apRating.reduce((item, value) => {
+  return parseInt(item) + value
+ },0)
+const itogTotal = summRating / 5;
 
- return (
-   <div className={styles.card}>
-    {loading ? 
-      (
-        <div>
-         wait please, loading start!
-        </div>
-      ) :
-      (
-        items.map((item) => {
-         return (
-           <Route exact path="/:cafeId?">
-            <HomePage item={item} key={item.id} />
-           </Route>
-           )
-        })
-      )
-    }
-   </div>
- );
-=======
-  const items = useSelector((state) => state.cafe.item);
-  const loading = useSelector((state) => state.cafe.loadingItem);
+
+
+ const Rating = <StarRating  rating={itogTotal}/>;
 
   return (
     <div className={styles.card}>
       <Switch>
-        {/*Вежри, это вне плановая верстка моя, Тимлида Али. Регистрация не рабочая,я просто хотел
-          проверить, все ли хорошо будет работать при переключении по кнопке регистрация.
-          Когда Алисхан все закончит, он добавит свою верстку вместо моей.
-          Если будете искать Link, то он находиться в папке /Components/Header/Header.
-          */}
         <Route exact path="/registration">
           <Login />
         </Route>
@@ -52,7 +35,9 @@ function Card(props) {
             <div>Loading is Start! Wait Please!</div>
           ) : (
             items.map((item) => {
-              return <HomePage item={item} key={item.id} />;
+              return (
+                <HomePage item={item} Rating={Rating} key={item.id} />
+              )
             })
           )}
         </Route>
@@ -62,7 +47,6 @@ function Card(props) {
       </Switch>
     </div>
   );
->>>>>>> master
 }
 
 export default Card;

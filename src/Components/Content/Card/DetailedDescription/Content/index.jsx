@@ -8,12 +8,12 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 function Content(props) {
-  const location = useSelector((state) => state.cafe.addresses);
+  const location = useSelector((state) => state.addresses.addresses);
   const id = parseInt(useParams().id);
   const filteredAddresses = location.filter((item) => item.cafeId === id);
-  const images = useSelector((state) => state.cafe.BigImage);
+  const images = useSelector((state) => state.bigimage.BigImage);
   const filteredImages = images.filter((item) => item.cafeId === id);
-  const ContactInfo = useSelector((state) => state.cafe.ContactInfo);
+  const ContactInfo = useSelector((state) => state.contactinfo.ContactInfo);
   const filteredContactInfo = ContactInfo.filter((item) => item.cafeId === id);
 
   return (
