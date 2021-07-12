@@ -5,9 +5,9 @@ import { loadReviews } from './actions'
 import { useParams } from 'react-router-dom'
 import User from './Users/User'
 import { loadUsers } from './Users/actions'
+import { addReview } from './Button/action'
 // import Form from './Form/Form'
 // import Button from './Button/Button'
-import { addReview } from './Button/action'
 
 function Reviews (props) {
   const dispatch =useDispatch();
