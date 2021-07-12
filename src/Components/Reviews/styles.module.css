@@ -1,24 +1,37 @@
 .reviewsContent {
     margin-top: 40px;
-    display: flex;
     padding-top: 10px;
     border-top: solid 1px lightslategrey;
 }
 
-.reviewsBlock {
+.reviewsFormButton {
     display: flex;
-}
-
-
-.users {
-    margin-right: 30px;
+    margin-top: 20px;
 }
 
 .reviews {
-
+    margin-top: 40px;
+    font-size: 14px;
+    width: 700px;
 }
+
+.reviewBlock {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.user {
+    padding-right: 40px;
+}
+
 
 input {
     width: 500px;
+    height: 25px;
     margin-right: 50px;
+
+}
+
+button {
+    padding: 6px 15px;
 }

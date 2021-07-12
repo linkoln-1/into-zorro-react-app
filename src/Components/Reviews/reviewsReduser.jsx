@@ -1,6 +1,6 @@
 const initialState = {
   reviews: [],
-  loading: false
+  loading: false,
 }
 
 const reviewsReduser = (state = initialState, action) => {
@@ -16,6 +16,12 @@ const reviewsReduser = (state = initialState, action) => {
         ...state,
         loading: false,
         reviews: action.payload
+      }
+
+    case 'reviews/add':
+      return {
+        ...state,
+        reviews: [...state.reviews, action.payload]
       }
 
     default:
