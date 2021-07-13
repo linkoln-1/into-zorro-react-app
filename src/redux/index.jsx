@@ -2,10 +2,10 @@ import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunk from "redux-thunk";
 import { createLogger } from "redux-logger/src";
 import Card from "../Components/Content/Card/CardItems/cardReducer";
-import addressess from "../Components/Content/Card/addresessReducer";
-import bigImages from "../Components/Content/Card/BigImageReducer";
-import ContactInfo from "../Components/Content/Card/ContactInfoReducer";
-import Rating from "../Components/Content/Card/RatingReducer";
+import addressess from "./addresessReducer";
+import bigImages from "./BigImageReducer";
+import ContactInfo from "./ContactInfoReducer";
+import Rating from "./RatingReducer";
 
 const logger = createLogger({
   diff: true,

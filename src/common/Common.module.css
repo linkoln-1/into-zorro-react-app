@@ -107,8 +107,24 @@
 }
 
 .ClockMap {
-  width: 500px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
 }
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating p {
+  margin-left: 10px;
+}
+.SignUpLogin {
+  display: flex;
+}
+.SignUpLogin span {
+
+}
+
 .addresses img {
   width: 22px;
 }

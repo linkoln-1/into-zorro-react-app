@@ -18,6 +18,19 @@ export const Rating = (state = initialState, action) => {
     loadingItem: false,
    };
 
+  case "rating/send/start" :
+   return {
+    ...state,
+    loadingItem: true
+   }
+
+  case "rating/send/success" :
+   return {
+    ...state,
+    rating:[...state.rating ,action.payload],
+    loadingItem: false
+   }
+
   default:
    return state;
  }

@@ -1,4 +1,4 @@
-export const LoadItems = () => {
+export const loadItems = () => {
   return (dispatch) => {
     dispatch({ type: "cafe/load/start" });
 

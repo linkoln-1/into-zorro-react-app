@@ -1,4 +1,4 @@
-export const LoadContactInfo = () => {
+export const loadContactInfo = () => {
  return (dispatch) => {
   dispatch({ type: "info/load/start" });
 

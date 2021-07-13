@@ -1,4 +1,4 @@
-export const LoadAddress = () => {
+export const loadAddress = () => {
  return (dispatch) => {
   dispatch({ type: "addresses/load/start" });
 

@@ -10,7 +10,7 @@ function Header() {
        <LogoText />
       </Route>
       {/* Тут будут кнопки входа и регистрации, поэтому просто напишу текст */}
-      <div className="sign-up-login">
+      <div className={styles.SignUpLogin}>
        <div className='nav__login'>
         <NavLink to='/Login'>Войти</NavLink>
        </div>

@@ -1,4 +1,4 @@
-export const LoadBigImage = () => {
+export const loadBigImage = () => {
  return (dispatch) => {
   dispatch({ type: "image/load/start" });
 
