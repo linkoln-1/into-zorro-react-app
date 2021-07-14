@@ -50,24 +50,10 @@
   width: 265px;
   margin-top: 50px;
 }
-.input {
-  display: none;
-}
-.Star {
-  cursor: pointer;
-  transition: color 200ms;
-}
 .RatingBlock {
   display: flex;
   align-items: center;
 }
-.TextRating {
-  margin-left: 10px;
-}
-.TextRating p {
- font-size: 12px;
-}
-
 
 .cardImage img {
   width: 240px;
@@ -121,8 +107,24 @@
 }
 
 .ClockMap {
-  width: 500px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
 }
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating p {
+  margin-left: 10px;
+}
+.SignUpLogin {
+  display: flex;
+}
+.SignUpLogin span {
+
+}
+
 .addresses img {
   width: 22px;
 }

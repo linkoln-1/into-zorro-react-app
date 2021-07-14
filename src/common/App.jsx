@@ -1,15 +1,16 @@
-import Header from "../Components/Header/Header";
-import Card from "../Components/Content/Card";
+import Header from "./../Components/Header/Header"
+import Routes from "../Components/Content/Card";
 import Footer from "../Components/Footer/Footer";
 import styles from "./Common.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch} from "react-redux";
 import { useEffect } from "react";
-import {
-  LoadAddress,
-  LoadBigImage,
-  LoadContactInfo,
-  LoadItems,
-} from "../Components/Content/Card/CardItems/actions";
+import {loadItems} from "../Components/Content/Card/CardItems/actions";
+import {loadAddress} from "../redux/addresessReducer/actions";
+import {loadBigImage} from "../redux/BigImageReducer/actions";
+import {loadContactInfo} from "../redux/ContactInfoReducer/actions";
+import {loadRatings} from "../redux/RatingReducer/actions";
+
+
 
 // import BlockReview from '../Components/Content/Card/Reviews/BlockReviews/BlockReview'
 
@@ -17,16 +18,17 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(LoadItems());
-    dispatch(LoadAddress());
-    dispatch(LoadBigImage());
-    dispatch(LoadContactInfo());
+    dispatch(loadItems());
+    dispatch(loadAddress());
+    dispatch(loadBigImage());
+    dispatch(loadContactInfo());
+    dispatch(loadRatings());
   }, [dispatch]);
 
   return (
     <div className={styles.container}>
       <Header />
-      <Card />
+      <Routes />
       <Footer />
       {/*<BlockReview />*/}
     </div>

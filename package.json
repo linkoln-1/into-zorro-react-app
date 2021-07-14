@@ -3,14 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "json-server": "^0.16.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-iframe": "^1.8.0",
+    "react-rating": "^2.0.5",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -19,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "watch": "npx json-server --watch db.json --port 8000",
     "prettify": "prettier --write ./src"
   },
   "eslintConfig": {
@@ -40,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^2.0.9",
     "prettier": "^2.3.2",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
