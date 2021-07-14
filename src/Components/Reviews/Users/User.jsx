@@ -15,7 +15,7 @@ function User (props) {
             <div>
               {review.text}
             </div>
-            <div>
+            <div className={styles.date}>
               {review.date}
             </div>
           </div>

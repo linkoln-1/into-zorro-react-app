@@ -16,8 +16,16 @@
 }
 
 .reviewBlock {
+    padding: 7px 30px;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 14px -8px black;
+    border-radius: 17px;
+}
+
+.date {
+    color: gray;
+    text-align: end;
 }
 
 .user {
