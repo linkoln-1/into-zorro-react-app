@@ -8,6 +8,7 @@ import {useDispatch, useSelector} from "react-redux";
 import { useParams } from "react-router-dom";
 import Rating from "react-rating";
 import {postRating} from "../../../../../redux/RatingReducer/actions";
+import Reviews from '../../../../Reviews'
 
 function Content(props) {
   const location = useSelector((state) => state.addresses.addresses);
@@ -35,6 +36,8 @@ function Content(props) {
       })}
 
       <LocationMap />
+
+      <Reviews/>
 
     </div>
   );

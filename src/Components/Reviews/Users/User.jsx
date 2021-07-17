@@ -2,7 +2,11 @@ import React, { useEffect } from 'react'
 import styles from '../styles.module.css'
 
 function User (props) {
-  const filteredReviews = props.reviews.filter(item => item.userId === props.user.id);
+  const filteredReviews = props.reviews
+    .filter(item => item.userId === props.user.id)
+    .filter(review => review.cafeId === props.id);
+
+
 
   return (
     <div className={styles.reviewBlock}>

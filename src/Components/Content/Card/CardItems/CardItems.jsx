@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import styles from "../../../../common/Common.module.css";
 import {NavLink} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import Rating from "react-rating";
 import "./StarGlobal.css";
 import {postRating} from "../../../../redux/RatingReducer/actions";
+import { loadReviews } from '../../../Reviews/actions'
+import { loadUsers } from '../../../Reviews/Users/actions'
 
 
 function CardItems(props) {
- const dispatch = useDispatch();
- const ratingItems = useSelector((state) => {
+  const dispatch = useDispatch();
+  const reviews = useSelector(state => state.reviews.reviews)
+  const filteredReviews = reviews.filter(review => review.cafeId === props.item.id)
+  const ratingItems = useSelector((state) => {
   const items = state.ratinges.rating.filter(
     (item) => item.cafeId === props.item.id
   );
@@ -26,6 +30,7 @@ function CardItems(props) {
  const handleClick = (rating) => {
    dispatch(postRating(id,rating))
  }
+
 
 
  return (
@@ -52,6 +57,9 @@ function CardItems(props) {
        fullSymbol={'fa fa-star'}
      />
      <p>Rating is {m}</p>
+      <div>
+        Отзывы ({filteredReviews.length})
+      </div>
     </div>
   );
 }

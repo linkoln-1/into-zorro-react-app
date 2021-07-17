@@ -79,6 +79,86 @@
       "cafeId": 6,
       "userId": 6,
       "rating": 2
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 8
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 9
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 10
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 11
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 12
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 13
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 14
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 15
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 16
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 17
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 18
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 19
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 20
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 21
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 22
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 23
     }
   ],
   "bigImages": [
@@ -213,84 +293,16 @@
       "email": "leanne@mail.ru"
     },
     {
+      "name": "asdff",
       "email": "dsds@dfd",
       "pass": "eee",
       "id": 4
     },
     {
-      "email": "foobar",
-      "pass": "qwerty",
+      "name": "qwerty",
+      "email": "dsds@dfd",
+      "pass": "eee",
       "id": 5
-    },
-    {
-      "email": "qwerty",
-      "pass": "qwerty",
-      "id": 6
-    },
-    {
-      "email": "qwe",
-      "pass": "qwe",
-      "id": 7
-    },
-    {
-      "email": "qwe",
-      "pass": "qwe",
-      "id": 8
-    },
-    {
-      "email": "ali",
-      "pass": "1234",
-      "id": 9
-    },
-    {
-      "email": "",
-      "pass": "",
-      "id": 10
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 11
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 12
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 13
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 14
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 15
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 16
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 17
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 18
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 19
     }
   ],
   "reviews": [
@@ -299,6 +311,7 @@
       "userId": 1,
       "cafeId": 1,
       "date": "10.07.2021",
+      "positive": true,
       "text": "Очень вежливый и приятный персонал, вкусная еда, напитки просто супер. Заказали стейк, семгу и лимонады грушевый и апельсиновый! Все очень вкусно! И кстати очень быстро принесли заказ!"
     },
     {
@@ -306,6 +319,7 @@
       "userId": 2,
       "cafeId": 1,
       "date": "10.07.2020",
+      "positive": true,
       "text": "Вкусные стейки. Атмосфера распологает к теплому семейному ужину. Грушевый лимонад просто великолепен. Обязательно сходим еще."
     },
     {
@@ -313,6 +327,7 @@
       "userId": 3,
       "cafeId": 2,
       "date": "12.05.2020",
+      "positive": true,
       "text": "Каждый раз, когда приезжаю в Грозный, стейки ем только здесь. Особенно с тушенными овощами самое то."
     },
     {
@@ -320,13 +335,22 @@
       "userId": 1,
       "cafeId": 2,
       "date": "15.03.2021",
+      "positive": false,
       "text": "Не понравилось"
     },
     {
+      "userId": 3,
       "cafeId": 1,
-      "text": "",
-      "date": "14.07.2021",
+      "text": "Это положительный отзыв",
+      "date": "15.07.2021",
       "id": 5
+    },
+    {
+      "userId": 5,
+      "cafeId": 3,
+      "text": "qwerty",
+      "date": "16.07.2021",
+      "id": 6
     }
   ]
 }
