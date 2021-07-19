@@ -9,7 +9,8 @@ import {loadAddress} from "../redux/addresessReducer/actions";
 import {loadBigImage} from "../redux/BigImageReducer/actions";
 import {loadContactInfo} from "../redux/ContactInfoReducer/actions";
 import {loadRatings} from "../redux/RatingReducer/actions";
-import { loadReviews } from '../Components/Reviews/actions'
+import { loadReviews } from '../Components/BlockReviews/actions'
+import { loadUsers } from '../Components/BlockReviews/Users/actions'
 
 function App() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ function App() {
     dispatch(loadContactInfo());
     dispatch(loadRatings());
     dispatch(loadReviews());
+    dispatch(loadUsers());
   }, [dispatch]);
 
   return (

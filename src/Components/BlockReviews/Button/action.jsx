@@ -1,18 +1,4 @@
-export const loadReviews = () => {
-  return(dispatch) => {
-    dispatch({type: 'reviews/load/start'});
-    fetch(`http://localhost:8000/reviews`)
-      .then(res => res.json())
-      .then(json => {
-        dispatch({
-          type: 'reviews/load/success',
-          payload: json
-        })
-      })
-  }
-}
-
-export const addReview = (text, name, id, userId) => {
+export const addReview = (text, id, userId) => {
   return(dispatch) => {
     fetch(`http://localhost:8000/reviews`, {
       method: 'POST',
@@ -20,7 +6,7 @@ export const addReview = (text, name, id, userId) => {
         userId: userId,
         cafeId: id,
         text: text,
-        name: name,
+        // name: name,
         date: new Date().toLocaleDateString()
       }),
       headers:{
@@ -35,7 +21,7 @@ export const addReview = (text, name, id, userId) => {
             userId: userId,
             cafeId: id,
             text: text,
-            name: name,
+            // name: name,
           }
         })
       })

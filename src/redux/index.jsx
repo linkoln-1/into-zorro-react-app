@@ -6,8 +6,8 @@ import addressess from "./addresessReducer";
 import bigImages from "./BigImageReducer";
 import ContactInfo from "./ContactInfoReducer";
 import Rating from "./RatingReducer";
-import reviewsReduser from '../Components/Reviews/reviewsReduser'
-import usersReduser from '../Components/Reviews/Users/usersReduser'
+import reviewsReduser from '../Components/BlockReviews/reviewsReduser'
+import usersReduser from '../Components/BlockReviews/Users/usersReduser'
 
 
 const logger = createLogger({

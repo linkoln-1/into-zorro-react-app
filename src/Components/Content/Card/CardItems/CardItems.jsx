@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from "../../../../common/Common.module.css";
 import {NavLink} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import Rating from "react-rating";
 import "./StarGlobal.css";
 import {postRating} from "../../../../redux/RatingReducer/actions";
-import { loadReviews } from '../../../Reviews/actions'
-import { loadUsers } from '../../../Reviews/Users/actions'
+
 
 
 function CardItems(props) {

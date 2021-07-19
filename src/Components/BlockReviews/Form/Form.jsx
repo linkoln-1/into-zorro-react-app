@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import styles from '../styles.module.css'
 
 function Form (props) {
 
@@ -9,6 +10,7 @@ function Form (props) {
   return (
     <div>
       <input
+        className={styles.input}
         type="text"
         placeholder="Введите отзыв"
         value={props.text}

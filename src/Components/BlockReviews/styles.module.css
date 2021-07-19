@@ -33,7 +33,7 @@
 .reviews {
     margin-top: 40px;
     font-size: 14px;
-    width: 700px;
+    width: 800px;
 }
 
 .reviewBlock {
@@ -75,4 +75,22 @@
     border-color: #a09f9f;
     border-radius: 10px;
     font-family: "Roboto Slab", serif;
+}
+
+.btn {
+    margin: auto;
+    width: max-content;
+    background-color: white;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    transition: .50s ease-out;
+    border:none;
+}
+
+.btn:hover {
+    box-shadow: 0 0 12px -4px rgba(144, 143, 143, 0.51);
 }
