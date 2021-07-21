@@ -14,14 +14,12 @@ const logger = createLogger({
 
 const rootReducer = combineReducers({
   cafe: Card,
-  addresses:addressess,
-  bigimage:bigImages,
-  contactinfo:ContactInfo,
-  ratinges:Rating
+  addresses: addressess,
+  bigimage: bigImages,
+  contactinfo: ContactInfo,
+  ratinges: Rating,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));
-
-
 
 export default store;

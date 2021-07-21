@@ -1,22 +1,18 @@
-import Header from "./../Components/Header/Header"
-import Routes from "../Components/Content/Card";
+import Header from "./../Components/Header/Header";
+import Routes from "../Components/Content/Card/Routes";
 import Footer from "../Components/Footer/Footer";
 import styles from "./Common.module.css";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import {loadItems} from "../Components/Content/Card/CardItems/actions";
-import {loadAddress} from "../redux/addresessReducer/actions";
-import {loadBigImage} from "../redux/BigImageReducer/actions";
-import {loadContactInfo} from "../redux/ContactInfoReducer/actions";
-import {loadRatings} from "../redux/RatingReducer/actions";
-
-
-
+import { loadItems } from "../Components/Content/Card/CardItems/actions";
+import { loadAddress } from "../redux/addresessReducer/actions";
+import { loadBigImage } from "../redux/BigImageReducer/actions";
+import { loadContactInfo } from "../redux/ContactInfoReducer/actions";
+import { loadRatings } from "../redux/RatingReducer/actions";
 // import BlockReview from '../Components/Content/Card/Reviews/BlockReviews/BlockReview'
 
 function App() {
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(loadItems());
     dispatch(loadAddress());

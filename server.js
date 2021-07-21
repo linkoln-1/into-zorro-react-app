@@ -4,13 +4,6 @@ const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
 const PORT = 8000;
 
-server.post('/user-login', function login(req, res) {
-  res.json(req.toJson())
-})
-server.post('users', (res, req) => {
-  // ...
-})
-
 
 server.use(middlewares);
 server.use(router);

@@ -4,10 +4,8 @@ import Map from "../Header/Map";
 import ImageCafe from "./ImageCafe";
 import InfoCafe from "./InfoCafe";
 import LocationMap from "./LocationMap";
-import {useDispatch, useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import Rating from "react-rating";
-import {postRating} from "../../../../../redux/RatingReducer/actions";
 
 function Content(props) {
   const location = useSelector((state) => state.addresses.addresses);
@@ -17,9 +15,6 @@ function Content(props) {
   const filteredImages = images.filter((item) => item.cafeId === id);
   const ContactInfo = useSelector((state) => state.contactinfo.ContactInfo);
   const filteredContactInfo = ContactInfo.filter((item) => item.cafeId === id);
-
-
-
 
   return (
     <div className={styles.index}>
@@ -35,7 +30,6 @@ function Content(props) {
       })}
 
       <LocationMap />
-
     </div>
   );
 }

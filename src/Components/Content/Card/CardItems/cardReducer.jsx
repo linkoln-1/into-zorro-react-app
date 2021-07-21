@@ -18,6 +18,19 @@ export const Card = (state = initialState, action) => {
         loadingItem: false,
       };
 
+    case "postCafe/send/start":
+      return {
+        ...state,
+        loadingItem: true,
+      };
+
+    case "postCafe/send/success":
+      return {
+        ...state,
+        item: [...state.item, action.payload],
+        loadingItem: false,
+      };
+
     default:
       return state;
   }

@@ -79,6 +79,11 @@
       "cafeId": 6,
       "userId": 6,
       "rating": 2
+    },
+    {
+      "cafeId": 7,
+      "rating": 1,
+      "id": 8
     }
   ],
   "bigImages": [
@@ -200,97 +205,23 @@
     {
       "id": 1,
       "name": "1удди",
-      "password": "1234"
+      "login": "uddi1",
+      "password": "1234",
+      "email": "udi@mail.ru"
     },
     {
       "id": 2,
+      "login": "valera",
+      "password": "321",
       "name": "Валера",
       "email": "valera@mail.ru"
     },
     {
       "id": 3,
+      "login": "leaner1",
+      "password": "123456",
       "name": "Leanne",
       "email": "leanne@mail.ru"
-    },
-    {
-      "email": "dsds@dfd",
-      "pass": "eee",
-      "id": 4
-    },
-    {
-      "email": "foobar",
-      "pass": "qwerty",
-      "id": 5
-    },
-    {
-      "email": "qwerty",
-      "pass": "qwerty",
-      "id": 6
-    },
-    {
-      "email": "qwe",
-      "pass": "qwe",
-      "id": 7
-    },
-    {
-      "email": "qwe",
-      "pass": "qwe",
-      "id": 8
-    },
-    {
-      "email": "ali",
-      "pass": "1234",
-      "id": 9
-    },
-    {
-      "email": "",
-      "pass": "",
-      "id": 10
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 11
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 12
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 13
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 14
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 15
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 16
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 17
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 18
-    },
-    {
-      "email": "ali",
-      "pass": "nashkhoev",
-      "id": 19
     }
   ],
   "reviews": [

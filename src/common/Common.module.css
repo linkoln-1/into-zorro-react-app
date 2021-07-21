@@ -8,9 +8,105 @@
   margin: 20px auto;
   justify-content: space-between;
 }
-.Login {
-  width: 250px;
+.FormAddCafe {
   margin: auto;
+  width: 700px;
+}
+
+.FormAddCafe form {
+  margin-bottom: 35px;
+}
+.FormAddCafe form input {
+  width: 65%;
+  padding: 10px;
+}
+.ShipmentButton {
+  margin-left: 200px;
+}
+.Button span{
+  font-size: 12px;
+}
+.M {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #34bf75;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+.Wrapper {
+  position: relative;
+}
+.UserCircle {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  border-radius: 8%;
+  background: #9b2b2b;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+.Popover {
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  right: 30px;
+}
+.Cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.WrapperContent {
+  position: relative;
+  z-index: 4;
+}
+.Menu {
+  position: relative;
+  width: 450px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(88, 88, 99, 0.3),
+    0 0 24px -1px rgba(43, 43, 43, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.Menu:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: -14px;
+  border: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+}
+
+.MenuItem {
+  padding: 16px;
+  font-size: 14px;
+  color: #657389;
+  line-height: 1;
+  cursor: pointer;
+}
+.MenuItem:not(:last-child):hover {
+  background-color: rgba(231, 228, 228, 0.5);
+  color: #40506c;
+}
+.MenuItem button {
+  border-radius: 8px;
+  background-color: lightblue;
+  color: black;
+  width: 166px;
 }
 .logoText {
   width: 200px;
@@ -120,9 +216,6 @@
 }
 .SignUpLogin {
   display: flex;
-}
-.SignUpLogin span {
-
 }
 
 .addresses img {
