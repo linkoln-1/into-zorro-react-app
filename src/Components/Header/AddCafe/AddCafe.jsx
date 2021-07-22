@@ -56,11 +56,11 @@ function AddCafe(props) {
         />
       </form>
 
-      <NavLink exact to="/">
-        <div className={styles.ShipmentButton}>
+      <div className={styles.ShipmentButton}>
+        <NavLink exact to="/">
           <input type="submit" onClick={postClick} />
-        </div>
-      </NavLink>
+        </NavLink>
+      </div>
     </div>
   );
 }

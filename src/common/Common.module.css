@@ -20,11 +20,24 @@
   width: 65%;
   padding: 10px;
 }
-.ShipmentButton {
-  margin-left: 200px;
+.Href {
+  text-decoration: none;
+  color: black;
 }
-.Button span{
-  font-size: 12px;
+.Href:hover {
+  color: #9b2b2b;
+}
+.ShipmentButton {
+  width: 90px;
+}
+.ShipmentButton input {
+  padding: 10px;
+  border: 1px solid #9b2b2b;
+  background-color: white;
+}
+.ShipmentButton input:hover {
+  color: #9b2b2b;
+  cursor: pointer;
 }
 .M {
   margin-right: 8px;
@@ -90,17 +103,14 @@
   border: 7px solid transparent;
   border-bottom: 7px solid #fff;
 }
-
+.MenuItem:hover {
+  background-color: rgba(231, 228, 228, 0.5);
+}
 .MenuItem {
   padding: 16px;
   font-size: 14px;
-  color: #657389;
   line-height: 1;
   cursor: pointer;
-}
-.MenuItem:not(:last-child):hover {
-  background-color: rgba(231, 228, 228, 0.5);
-  color: #40506c;
 }
 .MenuItem button {
   border-radius: 8px;

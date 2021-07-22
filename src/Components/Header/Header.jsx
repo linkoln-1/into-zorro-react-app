@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import styles from "../../common/Common.module.css";
 import LogoText from "./LogoText";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Container, Menu, MenuItem } from "semantic-ui-react";
 
 function Header() {
-  const history = useHistory();
-  const handleClicked = () => {
-    history.push("/add-cafe");
-  };
   const [show, setShow] = useState(false);
   const toggleShow = () => {
     setShow(!show);
@@ -38,21 +34,29 @@ function Header() {
                         className={styles.MenuItem}
                         onClick={handleClick}
                       >
-                        <NavLink exact to="/Registration">Зарегестрироваться</NavLink>
+                        <NavLink
+                          className={styles.Href}
+                          exact
+                          to="/Registration"
+                        >
+                          Зарегестрироваться
+                        </NavLink>
                       </MenuItem>
                       <MenuItem
                         className={styles.MenuItem}
                         onClick={handleClick}
                       >
-                        <NavLink exact to="/Login">Войти</NavLink>
+                        <NavLink className={styles.Href} exact to="/Login">
+                          Войти
+                        </NavLink>
                       </MenuItem>
                       <MenuItem
                         className={styles.MenuItem}
                         onClick={handleClick}
                       >
-                        <button className={styles.Button} onClick={handleClicked}>
-                          <span>добавить новое заведение</span>
-                        </button>
+                        <NavLink className={styles.Href} exact to="/add-cafe">
+                          Добавить Заведение
+                        </NavLink>
                       </MenuItem>
                     </Menu>
                   </div>

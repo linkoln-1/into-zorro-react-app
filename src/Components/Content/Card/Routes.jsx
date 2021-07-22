@@ -6,8 +6,6 @@ import Content from "./DetailedDescription/Content";
 import AddCafe from "../../Header/AddCafe/AddCafe";
 import Registration from "../../Registration/Registration";
 
-
-
 function Routes(props) {
   return (
     <div className={styles.card}>

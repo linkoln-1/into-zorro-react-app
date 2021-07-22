@@ -19,7 +19,7 @@ function CardItems(props) {
     );
   });
   const id = props.item.id;
-  const m = ratingItems.toFixed(2);
+  const m = ratingItems.toFixed(1);
   const handleClick = (rating) => {
     dispatch(postRating(id, rating));
   };
@@ -28,7 +28,7 @@ function CardItems(props) {
     <div className={styles.cardItem1}>
       <NavLink to={`${props.item.id}`} className={styles.HomePage}>
         <div className={styles.cardImage}>
-          <img src={props.item.url} id="upload-img" alt="images" />
+          <img src={props.item.url} alt="images" />
         </div>
         <div className="card-tittle">
           <div className={styles.tittle1}>
