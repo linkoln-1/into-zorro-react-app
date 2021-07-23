@@ -7,25 +7,31 @@ import Form from './Form/Form'
 import Likes from './Likes'
 import Button from './Button/Button'
 import ButtonFilter from './Button/ButtonFilter'
+import { style } from 'redux-logger/src/diff'
 
 function Reviews (props) {
   const id = parseInt(useParams().id);
   const reviews = useSelector(state => state.reviews.reviews);
   const userId = reviews.map(review => review.userId);
   const filteredReviews = reviews.filter(review => review.cafeId === id);
-  const filteredPositiveReviews = filteredReviews.filter(review => review.positive === true)
+  const positiveReviews = filteredReviews.filter(review => review.positive === true)
   const [text, setText] = useState("")
 
-  const [positive, setPositive] = useState(false);
+  const [positive, setPositive] = useState(
+    // Берем ключ из sessionStorage. по умолчанию в клкюч передается false
+    JSON.parse(sessionStorage.getItem('positive')) || false);
+
+  //Сохраняем ключ в sessionStorage
+  useEffect(() => {
+    sessionStorage.setItem('positive', JSON.stringify(positive))
+  }, [positive])
 
   const positiveReview = () => {
     if (positive === false) {
       return filteredReviews
     }
-      return filteredPositiveReviews
+      return positiveReviews
   }
-
-
 
 
   return (
@@ -47,13 +53,18 @@ function Reviews (props) {
         </div>
       </div>
       <div>
-        <button onClick={() => setPositive(false)} className={styles.btn}>
+        <button
+          onClick={() => setPositive(false)}
+          className={positive === false ? styles.selected : styles.btn}
+        >
           Все отзывы
         </button>
-        <button onClick={() => setPositive(true)} className={styles.btn}>
+        <button
+          onClick={() => setPositive(true)}
+          className={positive === true ? styles.selected : styles.btn}
+        >
           Положительные отзывы
         </button>
-
       </div>
       <div className={styles.reviews}>
         <div>

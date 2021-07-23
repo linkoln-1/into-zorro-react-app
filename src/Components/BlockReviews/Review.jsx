@@ -15,10 +15,10 @@ function Review (props) {
   return (
       <div className={styles.reviewBlock}>
         <div className={styles.user}>
-          {loading ? <div>Загрузка ... </div> : <User user={user}/>}
+          {loading ? <div> Загрузка ... </div> : <User user={user}/>}
 
         </div>
-        <div>
+        <div className={styles.reviews}>
           {props.review.text}
         </div>
         <div className={styles.date}>

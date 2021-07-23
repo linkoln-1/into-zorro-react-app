@@ -159,6 +159,16 @@
       "cafeId": 1,
       "rating": 5,
       "id": 23
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 24
+    },
+    {
+      "cafeId": 1,
+      "rating": 5,
+      "id": 25
     }
   ],
   "bigImages": [

@@ -1,4 +1,4 @@
-export const addReview = (text, id, userId) => {
+export const addReview = (text, userId, id) => {
   return(dispatch) => {
     fetch(`http://localhost:8000/reviews`, {
       method: 'POST',

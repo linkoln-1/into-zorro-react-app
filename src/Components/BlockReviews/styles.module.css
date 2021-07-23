@@ -31,12 +31,13 @@
 }
 
 .reviews {
-    margin-top: 40px;
+    padding-bottom: 20px;
     font-size: 14px;
     width: 800px;
 }
 
 .reviewBlock {
+    position: relative;
     padding: 7px 30px;
     display: flex;
     margin-bottom: 15px;
@@ -45,14 +46,17 @@
 }
 
 .date {
+    position: absolute;
     color: gray;
     text-align: end;
+    bottom: 15px;
+    right: 15px;
 }
 
 .user {
-    padding-right: 40px;
+    width: 150px;
+    margin-left: 10px;
 }
-
 
 .input {
     padding-left: 10px;
@@ -65,9 +69,9 @@
     margin: 20px 0;
 }
 
-.button {
+button {
     height: 40px;
-    margin: 20px 0;
+    margin: 20px 15px 20px 0;
     background-color: white;
     padding: 6px 15px;
     box-shadow: 0 0 12px -4px rgba(144, 143, 143, 0.51);
@@ -77,20 +81,32 @@
     font-family: "Roboto Slab", serif;
 }
 
-.btn {
-    margin: auto;
+button.btn {
     width: max-content;
     background-color: white;
     padding: 10px 10px;
     font-size: 14px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-decoration: none;
     color: #333333;
     cursor: pointer;
     transition: .50s ease-out;
     border:none;
+    font-family: "Roboto Slab", serif;
 }
 
-.btn:hover {
-    box-shadow: 0 0 12px -4px rgba(144, 143, 143, 0.51);
+.selected {
+    width: max-content;
+    background-color: white;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    transition: .50s ease-out;
+    box-shadow: 0 0 12px 1px rgba(144, 143, 143, 0.51);
+    border: none;
+    font-family: "Roboto Slab", serif;
 }
+

@@ -11,7 +11,6 @@ server.post('users', (res, req) => {
   // ...
 })
 
-
 server.use(middlewares);
 server.use(router);
 server.listen(PORT, () => {
