@@ -6,8 +6,8 @@ import addressess from "./addresessReducer";
 import bigImages from "./BigImageReducer";
 import ContactInfo from "./ContactInfoReducer";
 import Rating from "./RatingReducer";
-import reviewsReduser from '../Components/BlockReviews/reviewsReduser'
-import usersReduser from '../Components/BlockReviews/Users/usersReduser'
+import reviewsReducer from '../Components/BlockReviews/reviewsReducer'
+import usersReducer from '../Components/BlockReviews/Users/usersReducer'
 
 
 const logger = createLogger({
@@ -21,8 +21,8 @@ const rootReducer = combineReducers({
   bigimage:bigImages,
   contactinfo:ContactInfo,
   ratinges:Rating,
-  reviews: reviewsReduser,
-  users: usersReduser
+  reviews: reviewsReducer,
+  users: usersReducer
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));

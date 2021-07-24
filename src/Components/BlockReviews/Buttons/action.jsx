@@ -1,27 +1,28 @@
-export const addReview = (text, userId, id) => {
+export const addReview = (text, userId, id, positive) => {
   return(dispatch) => {
+    dispatch({type: 'review/add/start'})
     fetch(`http://localhost:8000/reviews`, {
       method: 'POST',
       body: JSON.stringify({
-        userId: userId,
+        userId: 1,
         cafeId: id,
         text: text,
-        // name: name,
+        positive: positive,
         date: new Date().toLocaleDateString()
       }),
       headers:{
         'Content-type': 'application/json; charset=UTF-8',
       }
     })
-      .then(response => response.json())
-      .then(json => {
+      .then(() => {
         dispatch({
           type: 'reviews/add',
           payload: {
-            userId: userId,
+            userId: 1,
             cafeId: id,
             text: text,
-            // name: name,
+            positive: positive,
+            date: new Date().toLocaleDateString()
           }
         })
       })

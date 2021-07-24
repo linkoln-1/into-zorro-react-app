@@ -3,24 +3,24 @@ const initialState = {
   loading: false
 }
 
-const usersReduser = (state = initialState, action) => {
+const usersReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'users/load/start':
       return {
         ...state,
-        loading: true
-      }
+        loading: true,
+      };
 
     case 'users/load/success':
       return {
         ...state,
         loading: false,
-        users: action.payload
-      }
+        users: action.payload,
+      };
 
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default usersReduser;
+export default usersReducer;

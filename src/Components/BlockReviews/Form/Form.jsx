@@ -1,10 +1,9 @@
-import React from 'react'
-import styles from '../styles.module.css'
+import React from 'react';
+import styles from '../styles.module.css';
 
-function Form (props) {
-
+function Form(props) {
   const handleChangeReview = (e) => {
-    props.setText(e.target.value)
+    props.setText(e.target.value);
   };
 
   return (
@@ -17,7 +16,7 @@ function Form (props) {
         onChange={handleChangeReview}
       />
     </div>
-  )
+  );
 }
 
-export default Form
+export default Form;
