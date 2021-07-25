@@ -8,6 +8,8 @@ import { postRating } from "../../../../redux/RatingReducer/actions";
 
 function CardItems(props) {
   const dispatch = useDispatch();
+  const reviews = useSelector(state => state.reviews.reviews)
+  const filteredReviews = reviews.filter(review => review.cafeId === props.item.id)
   const ratingItems = useSelector((state) => {
     const items = state.ratinges.rating.filter(
       (item) => item.cafeId === props.item.id
@@ -48,6 +50,9 @@ function CardItems(props) {
         fullSymbol={"fa fa-star"}
       />
       <p>Rating is {m}</p>
+      <div>
+        Отзывы ({filteredReviews.length})
+      </div>
     </div>
   );
 }

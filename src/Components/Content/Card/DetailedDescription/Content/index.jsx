@@ -6,6 +6,7 @@ import InfoCafe from "./InfoCafe";
 import LocationMap from "./LocationMap";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import Reviews from '../../../../BlockReviews'
 
 function Content(props) {
   const location = useSelector((state) => state.addresses.addresses);
@@ -30,6 +31,9 @@ function Content(props) {
       })}
 
       <LocationMap />
+
+      <Reviews/>
+
     </div>
   );
 }

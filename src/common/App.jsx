@@ -9,16 +9,23 @@ import { loadAddress } from "../redux/addresessReducer/actions";
 import { loadBigImage } from "../redux/BigImageReducer/actions";
 import { loadContactInfo } from "../redux/ContactInfoReducer/actions";
 import { loadRatings } from "../redux/RatingReducer/actions";
-// import BlockReview from '../Components/Content/Card/Reviews/BlockReviews/BlockReview'
+import {loadItems} from "../Components/Content/Card/CardItems/actions";
+import {loadAddress} from "../redux/addresessReducer/actions";
+import {loadBigImage} from "../redux/BigImageReducer/actions";
+import {loadContactInfo} from "../redux/ContactInfoReducer/actions";
+import {loadRatings} from "../redux/RatingReducer/actions";
+import { loadReviews } from '../Components/BlockReviews/actions'
 
 function App() {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(loadItems());
     dispatch(loadAddress());
     dispatch(loadBigImage());
     dispatch(loadContactInfo());
     dispatch(loadRatings());
+    dispatch(loadReviews());
   }, [dispatch]);
 
   return (
@@ -26,7 +33,6 @@ function App() {
       <Header />
       <Routes />
       <Footer />
-      {/*<BlockReview />*/}
     </div>
   );
 }
