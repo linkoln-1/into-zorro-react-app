@@ -1,14 +1,13 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
-import thunk from "redux-thunk";
-import { createLogger } from "redux-logger/src";
-import Card from "../Components/Content/Card/CardItems/cardReducer";
-import addressess from "./addresessReducer";
-import bigImages from "./BigImageReducer";
-import ContactInfo from "./ContactInfoReducer";
-import Rating from "./RatingReducer";
-import reviewsReducer from '../Components/BlockReviews/reviewsReducer'
-import usersReducer from '../Components/BlockReviews/Users/usersReducer'
-
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { createLogger } from 'redux-logger/src';
+import Card from '../Components/Content/Card/CardItems/cardReducer';
+import addressess from './addresessReducer';
+import bigImages from './BigImageReducer';
+import ContactInfo from './ContactInfoReducer';
+import Rating from './RatingReducer';
+import reviewsReducer from '../Components/BlockReviews/reviewsReducer';
+import usersReducer from '../Components/BlockReviews/Users/usersReducer';
 
 const logger = createLogger({
   diff: true,
@@ -16,13 +15,13 @@ const logger = createLogger({
 });
 
 const rootReducer = combineReducers({
-  cafe:Card,
+  cafe: Card,
   addresses: addressess,
   bigimage: bigImages,
   contactinfo: ContactInfo,
   ratinges: Rating,
   reviews: reviewsReducer,
-  users: usersReducer
+  users: usersReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));

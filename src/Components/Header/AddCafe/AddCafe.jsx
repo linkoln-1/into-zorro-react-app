@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import styles from "../../../common/Common.module.css";
-import { useDispatch } from "react-redux";
-import { postCafe } from "../../Content/Card/CardItems/actions";
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import styles from '../../../common/Common.module.css';
+import { useDispatch } from 'react-redux';
+import { postCafe } from '../../Content/Card/CardItems/actions';
+import { NavLink } from 'react-router-dom';
 
 function AddCafe(props) {
   //Проблемы с добавлением фотографии, функкция не доделана, предстоит еще поработать!
 
   const dispatch = useDispatch();
-  const [title, setTittle] = useState("");
-  const [address, setAddress] = useState("");
-  const [photo, setPhoto] = useState("");
+  const [title, setTittle] = useState('');
+  const [address, setAddress] = useState('');
+  const [photo, setPhoto] = useState('');
   const NameOnchange = (e) => {
     setTittle(e.target.value);
   };

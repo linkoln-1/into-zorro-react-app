@@ -1,10 +1,10 @@
-import React from "react";
-import HomePage from "../HomePage/HomePage";
-import styles from "../../../common/Common.module.css";
-import { Route, Switch } from "react-router-dom";
-import Content from "./DetailedDescription/Content";
-import AddCafe from "../../Header/AddCafe/AddCafe";
-import Registration from "../../Registration/Registration";
+import React from 'react';
+import HomePage from '../HomePage/HomePage';
+import styles from '../../../common/Common.module.css';
+import { Route, Switch } from 'react-router-dom';
+import Content from './DetailedDescription/Content';
+import AddCafe from '../../Header/AddCafe/AddCafe';
+import Registration from '../../Registration/Registration';
 
 function Routes(props) {
   return (

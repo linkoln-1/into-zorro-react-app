@@ -96,7 +96,7 @@
   align-items: center;
 }
 .Menu:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 10px;
   top: -14px;

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styles from "../../common/Common.module.css";
-import LogoText from "./LogoText";
-import { NavLink } from "react-router-dom";
-import { Container, Menu, MenuItem } from "semantic-ui-react";
+import React, { useState } from 'react';
+import styles from '../../common/Common.module.css';
+import LogoText from './LogoText';
+import { NavLink } from 'react-router-dom';
+import { Container, Menu, MenuItem } from 'semantic-ui-react';
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -10,7 +10,7 @@ function Header() {
     setShow(!show);
   };
   const handleClick = () => {
-    console.log("MenuItem click");
+    console.log('MenuItem click');
     toggleShow();
   };
   return (

@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "../../../../../common/Common.module.css";
-import Map from "../Header/Map";
-import ImageCafe from "./ImageCafe";
-import InfoCafe from "./InfoCafe";
-import LocationMap from "./LocationMap";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import Reviews from '../../../../BlockReviews'
+import React from 'react';
+import styles from '../../../../../common/Common.module.css';
+import Map from '../Header/Map';
+import ImageCafe from './ImageCafe';
+import InfoCafe from './InfoCafe';
+import LocationMap from './LocationMap';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import Reviews from '../../../../BlockReviews';
 
 function Content(props) {
   const location = useSelector((state) => state.addresses.addresses);
@@ -29,11 +29,8 @@ function Content(props) {
       {filteredContactInfo.map((item) => {
         return <InfoCafe item={item} key={item.id} />;
       })}
-
       <LocationMap />
-
-      <Reviews/>
-
+      <Reviews />
     </div>
   );
 }

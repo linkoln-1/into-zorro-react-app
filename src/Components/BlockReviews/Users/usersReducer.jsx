@@ -1,7 +1,7 @@
 const initialState = {
   users: [],
-  loading: false
-}
+  loading: false,
+};
 
 const usersReducer = (state = initialState, action) => {
   switch (action.type) {

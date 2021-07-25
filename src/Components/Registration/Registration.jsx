@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Input from "../Input/Input";
-import { registration } from "../../redux/actions";
+import React, { useState } from 'react';
+import Input from '../Input/Input';
+import { registration } from '../../redux/actions';
 
 function Registration(props) {
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
+  const [email, setEmail] = useState('');
+  const [pass, setPass] = useState('');
   return (
     <div>
       <div>Регистрация</div>
@@ -16,7 +16,7 @@ function Registration(props) {
         placeholder="password"
       />
       <button onClick={() => registration(email, pass)}>
-        {" "}
+        {' '}
         Загерестрироваться
       </button>
     </div>

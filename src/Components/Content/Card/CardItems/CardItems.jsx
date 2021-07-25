@@ -1,18 +1,20 @@
-import React from "react";
-import styles from "../../../../common/Common.module.css";
-import { NavLink } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import Rating from "react-rating";
-import "./StarGlobal.css";
-import { postRating } from "../../../../redux/RatingReducer/actions";
+import React from 'react';
+import styles from '../../../../common/Common.module.css';
+import { NavLink } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import Rating from 'react-rating';
+import './StarGlobal.css';
+import { postRating } from '../../../../redux/RatingReducer/actions';
 
 function CardItems(props) {
   const dispatch = useDispatch();
-  const reviews = useSelector(state => state.reviews.reviews)
-  const filteredReviews = reviews.filter(review => review.cafeId === props.item.id)
+  const reviews = useSelector((state) => state.reviews.reviews);
+  const filteredReviews = reviews.filter(
+    (review) => review.cafeId === props.item.id,
+  );
   const ratingItems = useSelector((state) => {
     const items = state.ratinges.rating.filter(
-      (item) => item.cafeId === props.item.id
+      (item) => item.cafeId === props.item.id,
     );
     return (
       items.reduce((value, item) => {
@@ -46,13 +48,11 @@ function CardItems(props) {
       <Rating
         initialRating={m}
         onClick={handleClick}
-        emptySymbol={"fa fa-star star_gray"}
-        fullSymbol={"fa fa-star"}
+        emptySymbol={'fa fa-star star_gray'}
+        fullSymbol={'fa fa-star'}
       />
       <p>Rating is {m}</p>
-      <div>
-        Отзывы ({filteredReviews.length})
-      </div>
+      <div>Отзывы ({filteredReviews.length})</div>
     </div>
   );
 }

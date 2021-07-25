@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "../../../../../common/Common.module.css";
+import React from 'react';
+import styles from '../../../../../common/Common.module.css';
 
 function LocationMap(props) {
   return (

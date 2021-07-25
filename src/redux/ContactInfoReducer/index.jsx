@@ -5,13 +5,13 @@ const initialState = {
 
 export const ContactInfo = (state = initialState, action) => {
   switch (action.type) {
-    case "info/load/start":
+    case 'info/load/start':
       return {
         ...state,
         loadingItem: true,
       };
 
-    case "info/load/success":
+    case 'info/load/success':
       return {
         ...state,
         ContactInfo: action.payload,

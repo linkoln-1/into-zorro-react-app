@@ -5,13 +5,13 @@ const initialState = {
 
 export const bigImages = (state = initialState, action) => {
   switch (action.type) {
-    case "image/load/start":
+    case 'image/load/start':
       return {
         ...state,
         loadingItem: true,
       };
 
-    case "image/load/success":
+    case 'image/load/success':
       return {
         ...state,
         BigImage: action.payload,

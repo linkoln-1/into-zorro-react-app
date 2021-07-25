@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "../../../../../common/Common.module.css";
-import logo from "../../../images/logo.jpg";
+import React from 'react';
+import styles from '../../../../../common/Common.module.css';
+import logo from '../../../images/logo.jpg';
 
 function LogoText(props) {
   return (

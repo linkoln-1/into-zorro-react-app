@@ -5,13 +5,13 @@ const initialState = {
 
 export const addressess = (state = initialState, action) => {
   switch (action.type) {
-    case "addresses/load/start":
+    case 'addresses/load/start':
       return {
         ...state,
         loadingItem: true,
       };
 
-    case "addresses/load/success":
+    case 'addresses/load/success':
       return {
         ...state,
         addresses: action.payload,

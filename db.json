@@ -79,96 +79,6 @@
       "cafeId": 6,
       "userId": 6,
       "rating": 2
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 8
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 9
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 10
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 11
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 12
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 13
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 14
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 15
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 16
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 17
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 18
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 19
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 20
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 21
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 22
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 23
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 24
-    },
-    {
-      "cafeId": 1,
-      "rating": 5,
-      "id": 25
     }
   ],
   "bigImages": [
@@ -367,6 +277,14 @@
       "date": "15.07.2021",
       "positive": false,
       "id": 5
+    },
+    {
+      "userId": 1,
+      "cafeId": 1,
+      "text": "кафе очень приятное, обслуживание на высшем уровне",
+      "positive": true,
+      "date": "25.07.2021",
+      "id": 8
     }
   ]
 }
