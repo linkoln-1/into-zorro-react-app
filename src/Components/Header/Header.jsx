@@ -3,16 +3,20 @@ import styles from '../../common/Common.module.css';
 import LogoText from './LogoText';
 import { NavLink } from 'react-router-dom';
 import { Container, Menu, MenuItem } from 'semantic-ui-react';
+import MenuIcon from "@material-ui/icons/Menu";
 
 function Header() {
   const [show, setShow] = useState(false);
+  const token = localStorage.getItem('user');
+  const pars = JSON.parse(token)
+
   const toggleShow = () => {
     setShow(!show);
   };
   const handleClick = () => {
-    console.log('MenuItem click');
     toggleShow();
   };
+
   return (
     <div className="Parent-Block">
       <div className={styles.header}>
@@ -23,7 +27,7 @@ function Header() {
           <Container>
             <div className={styles.Wrapper}>
               <div className={styles.UserCircle} onClick={toggleShow}>
-                drop-down menu
+                <MenuIcon />
               </div>
               {show && (
                 <div className={styles.Popover}>
@@ -37,7 +41,7 @@ function Header() {
                         <NavLink
                           className={styles.Href}
                           exact
-                          to="/Registration"
+                          to="/registration"
                         >
                           Зарегестрироваться
                         </NavLink>
@@ -46,7 +50,7 @@ function Header() {
                         className={styles.MenuItem}
                         onClick={handleClick}
                       >
-                        <NavLink className={styles.Href} exact to="/Login">
+                        <NavLink className={styles.Href} exact to="/auth">
                           Войти
                         </NavLink>
                       </MenuItem>
@@ -54,9 +58,9 @@ function Header() {
                         className={styles.MenuItem}
                         onClick={handleClick}
                       >
-                        <NavLink className={styles.Href} exact to="/add-cafe">
+                        {pars !== null ? <NavLink className={styles.Href} exact to="/add-cafe">
                           Добавить Заведение
-                        </NavLink>
+                        </NavLink> : null}
                       </MenuItem>
                     </Menu>
                   </div>

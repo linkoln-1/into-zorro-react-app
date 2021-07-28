@@ -109,3 +109,7 @@ button.btn {
   border: none;
   font-family: 'Roboto Slab', serif;
 }
+.ReviewLength span {
+  color: #9b2b2b;
+  cursor: pointer;
+}

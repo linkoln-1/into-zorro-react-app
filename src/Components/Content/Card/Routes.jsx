@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Content from './DetailedDescription/Content';
 import AddCafe from '../../Header/AddCafe/AddCafe';
 import Registration from '../../Registration/Registration';
+import Login from "../../Login";
 
 function Routes(props) {
   return (
@@ -12,6 +13,9 @@ function Routes(props) {
       <Switch>
         <Route exact path="/registration">
           <Registration />
+        </Route>
+        <Route exact path="/auth">
+          <Login />
         </Route>
         <Route exact path="/">
           <HomePage />

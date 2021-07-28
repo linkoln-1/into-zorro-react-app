@@ -13,7 +13,7 @@ function InfoCafe(props) {
             <div className={styles.address}>
               <div>Адрес</div>
               <div>
-                <span>{props.item.LocationAddress}</span>
+                <span>{props.item.LockAddresses}</span>
               </div>
             </div>
 
