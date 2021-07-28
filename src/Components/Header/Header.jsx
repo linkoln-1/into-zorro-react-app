@@ -43,7 +43,7 @@ function Header() {
                           exact
                           to="/registration"
                         >
-                          Зарегестрироваться
+                          Зарегистрироваться
                         </NavLink>
                       </MenuItem>
                       <MenuItem
