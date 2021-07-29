@@ -78,6 +78,11 @@
       "cafeId": 1,
       "rating": 4,
       "id": 7
+    },
+    {
+      "cafeId": 6,
+      "rating": 2,
+      "id": 8
     }
   ],
   "bigImages": [
