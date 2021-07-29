@@ -1,10 +1,10 @@
-export const addReview = (text, userId, id, positive) => {
+export const addReview = (text, userId, id, positive,authUserId) => {
   return (dispatch) => {
     dispatch({ type: 'review/add/start' });
     fetch(`http://localhost:8000/reviews`, {
       method: 'POST',
       body: JSON.stringify({
-        userId: 1,
+        userId: authUserId,
         cafeId: id,
         text: text,
         positive: positive,
@@ -17,7 +17,7 @@ export const addReview = (text, userId, id, positive) => {
       dispatch({
         type: 'reviews/add',
         payload: {
-          userId: 1,
+          userId: authUserId,
           cafeId: id,
           text: text,
           positive: positive,

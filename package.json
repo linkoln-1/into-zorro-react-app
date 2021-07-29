@@ -31,7 +31,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch": "npx json-server --watch db.json --port 8000",
-    "prettify": "prettier --write ./src"
+    "prettify": "prettier --write ./src",
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -52,7 +53,7 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.9",
+    "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",

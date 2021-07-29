@@ -1,14 +1,15 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import { addReview } from './action';
 import { useParams } from 'react-router-dom';
 
 function ButtonAddReview(props) {
   const dispatch = useDispatch();
   const id = parseInt(useParams().id);
+  const authUserId = useSelector(state => state.auth.user);
 
   const handleAddReview = () => {
-    dispatch(addReview(props.text, props.setText, id, props.positive));
+    dispatch(addReview(props.text, props.setText, id, props.positive, authUserId.id));
     props.setText('');
     props.setPositive('');
   };
