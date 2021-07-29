@@ -46,13 +46,20 @@ function CardItems(props) {
           <span>{props.item.address}</span>
         </div>
       </div>
-      <Rating
-        initialRating={m}
-        onClick={handleClick}
-        emptySymbol={'fa fa-star star_gray'}
-        fullSymbol={'fa fa-star'}
-      />
-      <p>Rating is {m}</p>
+     <div className={styles.RatingStar}>
+      <div>
+       <Rating
+         className={styles.Star}
+         initialRating={m}
+         onClick={handleClick}
+         emptySymbol={'fa fa-star star_gray'}
+         fullSymbol={'fa fa-star'}
+       />
+      </div>
+     <div>
+      <p>{m}</p>
+     </div>
+     </div>
       <div className={style.ReviewLength}>
        {/*Это не кликабельно! данный блок просто выводит кол-во отзывов на той или иной странице!
        Я просто для украшения сделал Cursor:Pointer.

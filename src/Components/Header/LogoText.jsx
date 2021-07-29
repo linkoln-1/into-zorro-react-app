@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../common/Common.module.css';
-import logo from '../Content/images/logo.jpg';
+import logo from '../../logo/photo_2021-07-27_22-29-19.jpg';
 import { NavLink } from 'react-router-dom';
 
 function LogoText(props) {
@@ -11,7 +11,7 @@ function LogoText(props) {
           <img src={logo} alt="images" />
         </div>
         <div className={styles.text}>
-          <span>Рестораны и Кафе</span>
+          <span>Intozorro</span>
         </div>
       </div>
     </NavLink>

@@ -12,7 +12,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { useState } from 'react';
 import { Drawer, List, ListItem, Popover } from '@material-ui/core';
 import { AccountCircle, ExitToApp } from '@material-ui/icons';
+import AddBoxIcon from '@material-ui/icons/AddBox';
 import Profile from './Profile';
+import styles from "../../common/Common.module.css";
 
 const useStyle = makeStyles({
   button: {
@@ -112,7 +114,6 @@ function ButtonForAuth() {
 
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : false;
-
   return (
     <Box>
       {!user.token ? (
@@ -165,6 +166,14 @@ function ButtonForAuth() {
                   </Drawer>
                 </React.Fragment>
               ))}
+              <ListItem button>
+                <ListItemIcon className={classes.icon}>
+                  <AddBoxIcon/>
+                </ListItemIcon>
+                <NavLink className={styles.Href} exact to="/add-cafe">
+                  <span>Добавить Заведение</span>
+                </NavLink>
+              </ListItem>
               <ListItem button onClick={handleLogout}>
                 <ListItemIcon className={classes.icon}>
                   <ExitToApp />

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import User from './Users/User';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 function Review(props) {
   const users = useSelector((state) => state.users.users);

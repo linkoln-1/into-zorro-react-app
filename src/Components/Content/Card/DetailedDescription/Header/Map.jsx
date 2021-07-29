@@ -32,6 +32,7 @@ function Map(props) {
 
       <div className={styles.rating}>
         <Rating
+          className={styles.Star}
           initialRating={m}
           onClick={(e) => handleClick(e)}
           emptySymbol={'fa fa-star star_gray'}
