@@ -56,7 +56,7 @@
 
 [Магомед](https://github.com/MagomedChe) <br>
 [Али](https://github.com/linkoln-1) <br>
-[Алисхан](https://github.com/Aliskhan7)
+[Алисхан]()
 
 ## **В этом проекте я выполнял следующие задачи:**
 
