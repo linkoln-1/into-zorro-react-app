@@ -34,6 +34,9 @@
     "prettify": "prettier --write ./src",
     "dev": "nodemon server.js"
   },
+
+  "proxy": "http://localhost:8000",
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,6 +49,9 @@
       "not dead",
       "not op_mini all"
     ],
+
+
+
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
