@@ -4,7 +4,7 @@
 
 
 
-[Сайт проекта](https://whispering-castle-10972.herokuapp.com/)
+[Сайт проекта](https://into-zorro-app.herokuapp.com/)
 
 
 
