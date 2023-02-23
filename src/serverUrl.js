@@ -3,7 +3,7 @@ const { NODE_ENV } = process.env;
 export let serverUrl;
 
 if (NODE_ENV === 'development') {
-  serverUrl = 'http://localhost:8000'; // адрес сервера на локалке
+  serverUrl = 'http://localhost:8000';
 } else {
-  serverUrl = 'https://into-zorro-restaurant.onrender.com'; // адрес сервера после выгрузки
+  serverUrl = 'https://into-zorro.onrender.com';
 }
