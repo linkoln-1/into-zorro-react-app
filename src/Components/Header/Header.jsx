@@ -1,9 +1,8 @@
 import React from 'react';
 import LogoText from './LogoText';
-import { Toolbar } from '@material-ui/core'
-import ButtonForAuth from '../Login/ButtonForAuth'
-import { makeStyles } from '@material-ui/core/styles'
-
+import { Toolbar } from '@material-ui/core';
+import ButtonForAuth from '../Login/ButtonForAuth';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -30,9 +29,9 @@ function Header() {
   const classes = useStyles();
   return (
     <div>
-        <Toolbar className={classes.navbar}>
-          <LogoText />
-          <ButtonForAuth />
+      <Toolbar className={classes.navbar}>
+        <LogoText />
+        <ButtonForAuth />
       </Toolbar>
     </div>
   );

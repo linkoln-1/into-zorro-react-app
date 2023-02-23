@@ -12,7 +12,7 @@
   margin: auto;
   width: 700px;
 }
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   width: 1300px;
@@ -89,7 +89,7 @@
   align-items: center;
 }
 .RatingStar div p {
- margin-left: 10px;
+  margin-left: 10px;
 }
 .Star {
   color: #fdc634;

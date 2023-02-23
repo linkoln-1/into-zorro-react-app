@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../../../common/Common.module.css';
-import style from "../../../BlockReviews/styles.module.css";
+import style from '../../../BlockReviews/styles.module.css';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Rating from 'react-rating';
@@ -46,25 +46,25 @@ function CardItems(props) {
           <span>{props.item.address}</span>
         </div>
       </div>
-     <div className={styles.RatingStar}>
-      <div>
-       <Rating
-         className={styles.Star}
-         initialRating={m}
-         onClick={handleClick}
-         emptySymbol={'fa fa-star star_gray'}
-         fullSymbol={'fa fa-star'}
-       />
+      <div className={styles.RatingStar}>
+        <div>
+          <Rating
+            className={styles.Star}
+            initialRating={m}
+            onClick={handleClick}
+            emptySymbol={'fa fa-star star_gray'}
+            fullSymbol={'fa fa-star'}
+          />
+        </div>
+        <div>
+          <p>{m}</p>
+        </div>
       </div>
-     <div>
-      <p>{m}</p>
-     </div>
-     </div>
       <div className={style.ReviewLength}>
-       {/*Это не кликабельно! данный блок просто выводит кол-во отзывов на той или иной странице!
+        {/*Это не кликабельно! данный блок просто выводит кол-во отзывов на той или иной странице!
        Я просто для украшения сделал Cursor:Pointer.
        */}
-       <span>Отзывы ({filteredReviews.length})</span>
+        <span>Отзывы ({filteredReviews.length})</span>
       </div>
     </div>
   );
