@@ -1,4 +1,4 @@
-import {serverUrl} from "../../serverUrl";
+import { serverUrl } from '../../serverUrl';
 
 export const loadReviews = () => {
   return (dispatch) => {

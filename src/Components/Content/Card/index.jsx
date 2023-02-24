@@ -10,17 +10,17 @@ import Registration from '../../Registration/Registration';
 import Login from '../../Login';
 
 //styles
-import styles from '../../../common/Common.module.css';
+import styles from '../../../common/Common.module.scss';
 
 function Index(props) {
   return (
-    <div className={styles.card}>
+    <div className={styles.content}>
       <Routes>
-        <Route exact path="/registration" element={<Registration />} />
-        <Route exact path="/auth" element={<Login />} />
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/add-cafe" element={<AddCafe />} />
-        <Route exact path="/:id?" element={<Content />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/auth" element={<Login />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/add-cafe" element={<AddCafe />} />
+        <Route path="/:id?" element={<Content />} />
       </Routes>
     </div>
   );

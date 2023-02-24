@@ -1,11 +1,16 @@
+//library
 import React from 'react';
-import styles from '../../../../common/Common.module.css';
-import style from '../../../BlockReviews/styles.module.css';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Rating from 'react-rating';
-import './StarGlobal.css';
+
+//Redux Actions
 import { postRating } from '../../../../redux/RatingReducer/actions';
+
+//styles
+import styles from '../../../../common/Common.module.scss';
+import style from '../../../BlockReviews/styles.module.css';
+import './StarGlobal.css';
 
 function CardItems(props) {
   const dispatch = useDispatch();

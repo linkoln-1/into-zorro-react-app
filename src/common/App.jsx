@@ -17,7 +17,8 @@ import { loadRatings } from '../redux/RatingReducer/actions';
 import { loadReviews } from '../Components/BlockReviews/actions';
 
 //styles
-import styles from './Common.module.css';
+import styles from './Common.module.scss';
+
 function App() {
   const dispatch = useDispatch();
 

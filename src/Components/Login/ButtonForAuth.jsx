@@ -14,7 +14,7 @@ import { Drawer, List, ListItem, Popover } from '@material-ui/core';
 import { AccountCircle, ExitToApp } from '@material-ui/icons';
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import Profile from './Profile';
-import styles from '../../common/Common.module.css';
+import styles from '../../common/Common.module.scss';
 
 const useStyle = makeStyles({
   button: {
