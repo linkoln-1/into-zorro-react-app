@@ -4,7 +4,7 @@
 
 
 
-[Сайт проекта](https://into-zorro-app.herokuapp.com/)
+[Сайт проекта](https://into-zorro-restaurant.onrender.com/)
 
 
 
